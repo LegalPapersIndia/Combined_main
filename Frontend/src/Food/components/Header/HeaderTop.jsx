@@ -10,11 +10,11 @@ export default function HeaderTop({ handleScroll }) {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-4">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
             <a
-              href="mailto:info@india-iecregistration.org"
+              href="mailto:info@incorpfast.org"
               className="flex items-center gap-2 hover:text-orange-100 transition-colors"
             >
               <span>📧</span>
-              info@foodindia-registration.org
+              info@incorpfast.org
             </a>
             <span className="hidden sm:inline text-white/60">|</span>
             <a

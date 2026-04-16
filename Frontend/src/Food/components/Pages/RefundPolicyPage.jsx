@@ -110,7 +110,7 @@ export default function RefundPolicyPage() {
 
             <ol className="list-decimal pl-6 space-y-3 text-gray-700">
               <li>
-                Contact us via email at <strong>info@fssaifood-india.org</strong> or call 
+                Contact us via email at <strong>info@incorpfast.org</strong> or call 
                 <strong> +91-9211037448</strong>.
               </li>
 

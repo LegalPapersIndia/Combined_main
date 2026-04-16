@@ -195,7 +195,7 @@ export default function TermsAndConditionsPage() {
             </p>
 
             <div className="space-y-3 text-gray-700">
-              <p><span className="font-semibold">Email:</span> info@gstindia-registration.org</p>
+              <p><span className="font-semibold">Email:</span> info@incorpfast.org</p>
               <p><span className="font-semibold">Mobile:</span> +91-9211037448</p>
             </div>
           </section>

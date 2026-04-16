@@ -153,7 +153,7 @@ export default function FSSAIPolicyPage() {
             </p>
             <div className="bg-green-50 p-5 rounded-lg border border-green-200">
               <p className="font-medium text-gray-800">
-                Email: <strong>info@fssaifood-india.org</strong><br />
+                Email: <strong>info@incorpfast.org</strong><br />
                 Phone: <strong>+91-9211037448</strong>
               </p>
             </div>

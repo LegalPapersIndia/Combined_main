@@ -93,7 +93,7 @@ export default function MainFooter() {
             <div className="mt-6 space-y-2.5 text-sm">
               <p className="flex items-center gap-3">
                 <FaEnvelope className="text-blue-400 text-lg" />
-                info@gstregistration.org
+                info@incorpfast.org
               </p>
 
               <p className="flex items-center gap-3">

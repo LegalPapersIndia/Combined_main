@@ -147,7 +147,7 @@ export default function GSTAboutUsPage() {
             </div>
             <div className="flex items-center gap-3 text-gray-700">
               <FaEnvelope className="text-blue-600" />
-              <span className="font-medium break-all">info@gstindia-registration.org</span>
+              <span className="font-medium break-all">info@incorpfast.org</span>
             </div>
           </div>
           
