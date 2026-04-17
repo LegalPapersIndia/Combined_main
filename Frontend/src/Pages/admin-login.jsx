@@ -16,7 +16,7 @@ export default function AdminLogin() {
     try {
       setLoading(true);
 
-const API_URL = import.meta.env.VITE_API_BASE_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 const res = await fetch(`${API_URL}/api/admin/login`, {
   method: "POST",

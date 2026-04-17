@@ -12,9 +12,23 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "*",
-  allowedHeaders: ["Content-Type", "Authorization"]
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:5000",
+    "http://localhost:5173",
+    "https://www.incorpfast.org",
+    "https://incorpfast.org",
+    "https://combined-main.onrender.com"
+  ],
+  allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With", "Accept"],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  optionsSuccessStatus: 200
 }));
+
+// Handle preflight requests
+app.options('*', cors());
+
+// Middleware
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 
