@@ -115,7 +115,6 @@ export default function UnifiedAdminLogin() {
           <p className="text-sm text-gray-600">
             Password: <code className="bg-white px-2 py-1 rounded">admin123</code>
           </p>
-          <p className="text-xs text-gray-500 mt-2">⚠️ Change these credentials in production</p>
         </div>
       </div>
     </div>
