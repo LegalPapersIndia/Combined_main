@@ -41,7 +41,7 @@ export default function HeaderTop({ handleScroll }) {
             >
               FAQs
             </Link>
-            <Link to="/contact" className="hover:text-white transition-colors">
+            <Link to="/iec/contact" className="hover:text-white transition-colors">
               Contact Us
             </Link>
           </div>
