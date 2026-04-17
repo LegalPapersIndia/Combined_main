@@ -25,7 +25,7 @@ export default function PaymentSummary() {
       setError("No submitted data found. Starting fresh...");
       setTimeout(() => {
         sessionStorage.removeItem("iecSubmittedData");
-        navigate("/");
+        navigate("/iec/");
       }, 2500);
       return;
     }
@@ -44,17 +44,36 @@ export default function PaymentSummary() {
       console.error("Parse / validation error:", e);
       setError("Invalid or expired data found. Starting fresh...");
       sessionStorage.removeItem("iecSubmittedData");
-      setTimeout(() => navigate("/"), 2500);
+      setTimeout(() => navigate("/iec/"), 2500);
     }
   }, [navigate]);
 
-  const handlePay = () => {
+  const handlePay = async () => {
+    // Send payment confirmation to backend
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+    
+    try {
+      await fetch(`${API_URL}/api/leads/payment-initiated`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: data.txtemail,
+          serviceCategory: data.serviceCategory || "iecReg",
+          amount: 1950,
+          status: "payment_initiated"
+        }),
+      });
+    } catch (err) {
+      console.warn("Payment notification failed:", err);
+    }
+
+    // Redirect to payment gateway
     window.location.href = "https://www.instamojo.com/@LegalPapersIndia/l52d2d917f393479baf14f1e829a0a65c/";
   };
 
   const handleEdit = () => {
     sessionStorage.setItem("iecEditFromPayment", "true");
-    navigate("/"); // back to form
+    navigate("/iec/");
   };
 
   if (error) {

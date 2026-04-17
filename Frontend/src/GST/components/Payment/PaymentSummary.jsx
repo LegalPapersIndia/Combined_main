@@ -24,7 +24,7 @@ export default function PaymentSummary() {
       setError("No submitted data found. Starting fresh...");
       setTimeout(() => {
         sessionStorage.removeItem("gstSubmittedData");
-        navigate("/");
+        navigate("/gst/");
       }, 2500);
       return;
     }
@@ -40,23 +40,41 @@ export default function PaymentSummary() {
       console.error("Parse / validation error:", e);
       setError("Invalid or expired data found. Starting fresh...");
       sessionStorage.removeItem("gstSubmittedData");
-      setTimeout(() => navigate("/"), 2500);
+      setTimeout(() => navigate("/gst/"), 2500);
     }
   }, [navigate]);
 
   const handleEdit = () => {
     sessionStorage.setItem("gstEditFromPayment", "true");
-    navigate("/");
+    navigate("/gst/");
   };
 
   // Single Payment Option for GST
   const paymentOption = {
     amount: "₹ 5,999",
-    link: "#",                    // ← Replace with your actual Razorpay / Instamojo link
+    link: "https://www.instamojo.com/@LegalPapersIndia/l52d2d917f393479baf14f1e829a0a65c/",
     title: "Complete GST Registration Package"
   };
 
-  const handlePay = () => {
+  const handlePay = async () => {
+    // Send payment confirmation to backend
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+    
+    try {
+      await fetch(`${API_URL}/api/leads/payment-initiated`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: getValue("ctl00$ContentPlaceHolder1$txtEmail"),
+          serviceCategory: formData?.serviceCategory || "gstReg",
+          amount: 5999,
+          status: "payment_initiated"
+        }),
+      });
+    } catch (err) {
+      console.warn("Payment notification failed:", err);
+    }
+
     if (paymentOption.link === "#") {
       alert("Payment link will be activated soon. Please contact support for instant payment.");
       return;

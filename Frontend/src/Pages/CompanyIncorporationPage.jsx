@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 const states = [
@@ -61,6 +61,48 @@ export default function CompanyIncorporationPage() {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
+  // Restore submitted data when coming from Edit button
+  useEffect(() => {
+    const isEditMode = sessionStorage.getItem("companyEditFromPayment") === "true";
+
+    if (isEditMode) {
+      const submitted = sessionStorage.getItem("companySubmittedData");
+      if (submitted) {
+        try {
+          const parsed = JSON.parse(submitted);
+
+          // Optional: reject very old data
+          if (parsed._timestamp && Date.now() - parsed._timestamp > 60 * 60 * 1000) { // 1 hour
+            throw new Error("Edit session expired");
+          }
+
+          setFormData({
+            applicationType: parsed["ctl00$ContentPlaceHolder1$ddlApplicationType"] || "",
+            fullName: parsed["ctl00$ContentPlaceHolder1$txtName"]?.trim() || "",
+            mobile: parsed["ctl00$ContentPlaceHolder1$txtPhone1"] || "",
+            email: parsed["ctl00$ContentPlaceHolder1$txtEmail"]?.trim() || "",
+            companyName: parsed["ctl00$ContentPlaceHolder1$txtCompanyName"]?.trim() || "",
+            natureOfBusiness: parsed["ctl00$ContentPlaceHolder1$ddlNatureBusiness"] || "",
+            investment: parsed["ctl00$ContentPlaceHolder1$ddlInitialCapital"] || "₹ 0 - 1 Lakh",
+            members: parsed["ctl00$ContentPlaceHolder1$ddlNoOfDirectors"] || "2",
+            address1: parsed["ctl00$ContentPlaceHolder1$txtAddress1"]?.trim() || "",
+            house_no: parsed["ctl00$ContentPlaceHolder1$txtHOUSE"]?.trim() || "",
+            area_locality: parsed["ctl00$ContentPlaceHolder1$txtAreaLocality"]?.trim() || "",
+            city: parsed["ctl00$ContentPlaceHolder1$txtCity"]?.trim() || "",
+            district: parsed["ctl00$ContentPlaceHolder1$txtDistrict"]?.trim() || "",
+            state: parsed["ctl00$ContentPlaceHolder1$ddlState"] || "",
+            pin: parsed["ctl00$ContentPlaceHolder1$txtPin"] || "",
+          });
+
+          console.log("✅ Company data restored from edit");
+          sessionStorage.removeItem("companyEditFromPayment");
+        } catch (e) {
+          console.warn("❌ Failed to restore company data:", e);
+        }
+      }
+    }
+  }, []);
+
   const handleChange = (e) => {
     let { name, value } = e.target;
 
@@ -105,6 +147,10 @@ export default function CompanyIncorporationPage() {
     setLoading(true);
 
     const payload = {
+      serviceCategory: "companyReg",
+      leadSource: "companyincorporation.org",
+      _timestamp: Date.now(),
+      _formVersion: "2026-04",
       "ctl00$ContentPlaceHolder1$ddlApplicationType": formData.applicationType || "",
       "ctl00$ContentPlaceHolder1$txtName": formData.fullName.trim() || "",
       "ctl00$ContentPlaceHolder1$txtEmail": formData.email.trim() || "",
@@ -128,7 +174,7 @@ export default function CompanyIncorporationPage() {
     };
 
     try {
-      const API_URL = process.env.VITE_API_BASE_URL || "http://localhost:5000";
+      const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
       const res = await fetch(`${API_URL}/api/leads/submit`, {
         method: "POST",

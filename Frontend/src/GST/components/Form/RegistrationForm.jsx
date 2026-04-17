@@ -87,6 +87,48 @@ export default function RegistrationForm() {
     }
   }, []);
 
+  // Restore submitted data when coming from Edit button
+  useEffect(() => {
+    const isEditMode = sessionStorage.getItem("gstEditFromPayment") === "true";
+
+    if (isEditMode) {
+      const submitted = sessionStorage.getItem("gstSubmittedData");
+      if (submitted) {
+        try {
+          const parsed = JSON.parse(submitted);
+
+          // Optional: reject very old data
+          if (parsed._timestamp && Date.now() - parsed._timestamp > 60 * 60 * 1000) { // 1 hour
+            throw new Error("Edit session expired");
+          }
+
+          setFormData({
+            application_type: parsed["ctl00$ContentPlaceHolder1$ddlApplicationType"] || "",
+            applicant_name: parsed["ctl00$ContentPlaceHolder1$txtName"]?.trim() || "",
+            entity_name: parsed["ctl00$ContentPlaceHolder1$txtEntityName"]?.trim() || "",
+            pan_number: parsed["ctl00$ContentPlaceHolder1$txtPAN"] || "",
+            email: parsed["ctl00$ContentPlaceHolder1$txtEmail"]?.trim() || "",
+            mobile: parsed["ctl00$ContentPlaceHolder1$txtPhone1"] || "",
+            nature_of_business: parsed["ctl00$ContentPlaceHolder1$ddlNatureBusiness"] || "",
+            designation: parsed["ctl00$ContentPlaceHolder1$ddlDesignition"] || "",
+            address1: parsed["ctl00$ContentPlaceHolder1$txtAddress1"]?.trim() || "",
+            house_no: parsed["ctl00$ContentPlaceHolder1$txtHOUSE"]?.trim() || "",
+            area_locality: parsed["ctl00$ContentPlaceHolder1$txtAreaLocality"]?.trim() || "",
+            city: parsed["ctl00$ContentPlaceHolder1$txtCity"]?.trim() || "",
+            district: parsed["ctl00$ContentPlaceHolder1$txtDistrict"]?.trim() || "",
+            state: parsed["ctl00$ContentPlaceHolder1$ddlState"] || "",
+            pin: parsed["ctl00$ContentPlaceHolder1$txtPin"] || "",
+          });
+
+          console.log("✅ Data restored from edit");
+          sessionStorage.removeItem("gstEditFromPayment");
+        } catch (e) {
+          console.warn("❌ Failed to restore data:", e);
+        }
+      }
+    }
+  }, []);
+
   const resetForm = () => {
     setFormData(initialFormData);
     setErrors({});
@@ -176,7 +218,7 @@ export default function RegistrationForm() {
     const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
     try {
-      const backendPromise = fetch(`${API_URL}/leadRoutes`, {
+      const backendPromise = fetch(`${API_URL}/api/leads/submit`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -209,7 +251,7 @@ export default function RegistrationForm() {
       });
 
       setTimeout(() => {
-        navigate("/payment-summary");
+        navigate("../payment-summary");
       }, 1000);
 
     } catch (err) {

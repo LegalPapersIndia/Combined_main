@@ -99,15 +99,49 @@ export default function PaymentSummary() {
     }
   }, [navigate]);
 
-  const handlePay = () => {
+  const getAmount = () => {
+    if (formType === "company") return 4999;
+    if (formType === "gst") return 5999;
+    if (formType === "iec") return 1950;
+    return 0;
+  };
+
+  const handlePay = async () => {
+    // Send payment confirmation to backend
+    const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+    
+    try {
+      await fetch(`${API_URL}/api/leads/payment-initiated`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: data.email || data["ctl00$ContentPlaceHolder1$txtEmail"],
+          serviceCategory: data.serviceCategory || formType,
+          amount: getAmount(),
+          status: "payment_initiated"
+        }),
+      });
+    } catch (err) {
+      console.warn("Payment notification failed:", err);
+    }
+
     window.location.href =
       "https://www.instamojo.com/@LegalPapersIndia/l52d2d917f393479baf14f1e829a0a65c/";
   };
 
   const handleEdit = () => {
-    if (formType === "company") navigate("/company-incorporation");
-    else if (formType === "gst") navigate("/gst-registration");
-    else if (formType === "iec") navigate("/iec-registration");
+    if (formType === "company") {
+      sessionStorage.setItem("companyEditFromPayment", "true");
+      navigate("/company-incorporation/pvt");
+    }
+    else if (formType === "gst") {
+      sessionStorage.setItem("gstEditFromPayment", "true");
+      navigate("/gst/");
+    }
+    else if (formType === "iec") {
+      sessionStorage.setItem("iecEditFromPayment", "true");
+      navigate("/iec/");
+    }
     else navigate("/");
   };
 

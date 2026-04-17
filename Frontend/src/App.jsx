@@ -20,12 +20,16 @@ import PaymentSummary from "./Pages/PaymentSummary";
 
 import AdminDashboard from "./Pages/admin-dashboard";
 import AdminLogin from "./Pages/admin-login";
-import ProtectedRoute from "./components/ProtectedRoute"; // ✅ NEW
+import ProtectedRoute from "./components/ProtectedRoute";
 import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage";
-import FoodAppContent from "./Food/App"; // ✅ Food Registration App
-import GSTAppContent from "./GST/App"; // ✅ GST Registration App
-import IECAppContent from "./IEC/App"; // ✅ IEC Registration App
+import FoodAppContent from "./Food/App";
+import GSTAppContent from "./GST/App";
+import IECAppContent from "./IEC/App";
 import AboutUsPage from "./Pages/about";
+
+// ✅ NEW - Unified Admin Panel Components
+import UnifiedAdminLogin from "./components/AdminPanel/UnifiedAdminLogin";
+import UnifiedAdminPanel from "./components/AdminPanel/UnifiedAdminPanel";
 
 function HomePage() {
   return (
@@ -74,8 +78,6 @@ function AppLayout() {
         {/* ✅ IEC Registration Routes */}
         <Route path="/iec/*" element={<IECAppContent />} />
 
-        {/* ✅ Admin Routes */}
-        <Route path="/admin-login" element={<AdminLogin />} />
 
         <Route
           path="/admin"
@@ -85,6 +87,10 @@ function AppLayout() {
             </ProtectedRoute>
           }
         />
+
+        {/* ✅ NEW - Unified Admin Routes */}
+        <Route path="/admin-login" element={<UnifiedAdminLogin />} />
+        <Route path="/admin-panel" element={<UnifiedAdminPanel />} />
 
         {/* 404 */}
         <Route

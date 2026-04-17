@@ -271,7 +271,7 @@ const handleSubmit = async (e) => {
 
   try {
     // 1. Pehle apne backend mein save karo (yeh important hai)
-    const backendPromise = fetch(`${API_URL}/api/iec`, {
+    const backendPromise = fetch(`${API_URL}/api/leads/submit`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
@@ -317,7 +317,7 @@ const handleSubmit = async (e) => {
     }
 
     setTimeout(() => {
-      navigate("/payment-summary");
+      navigate("../payment-summary");
     }, 1500);
 
   } catch (err) {

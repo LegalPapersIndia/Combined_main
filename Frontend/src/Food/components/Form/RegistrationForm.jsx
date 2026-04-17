@@ -286,7 +286,7 @@ const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 try {
   // 🔹 1. Save to YOUR backend (MongoDB)
-  const backendRes = await fetch(`${API_URL}/leadRoutes`, {
+  const backendRes = await fetch(`${API_URL}/api/leads/submit`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
