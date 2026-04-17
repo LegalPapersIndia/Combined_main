@@ -42,7 +42,7 @@ export default function ContactPage() {
               Email
             </h3>
             <p className="text-center text-gray-600 text-lg font-medium break-all">
-              info@india-iecregistration.org
+            info@incorpfast.org
             </p>
             <p className="text-center text-sm text-gray-500 mt-2">
               We usually reply within 24 hours

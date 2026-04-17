@@ -155,8 +155,8 @@ export default function TermsAndConditionsPage() {
             <div className="space-y-3 text-gray-700">
               <p className="flex items-center gap-3">
                 <span className="font-semibold">Email:</span> 
-                <a href="mailto:info@india-iecregistration.org" className="text-orange-600 hover:underline">
-                  info@india-iecregistration.org
+                <a href="mailto:info@incorpfast.org" className="text-orange-600 hover:underline">
+                  info@incorpfast.org
                 </a>
               </p>
               <p className="flex items-center gap-3">

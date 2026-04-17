@@ -13,7 +13,6 @@ export default function Navbar({ navItems, handleScroll }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-3">
 
-          {/* Hamburger button - visible only on mobile (below md) */}
           <button
             className="md:hidden text-gray-900 focus:outline-none"
             onClick={toggleMenu}
@@ -35,7 +34,6 @@ export default function Navbar({ navItems, handleScroll }) {
             </svg>
           </button>
 
-          {/* Desktop / Tablet horizontal menu - hidden on mobile */}
           <div className="hidden md:flex flex-wrap justify-center items-center gap-2 lg:gap-6 text-sm lg:text-base font-semibold">
             {navItems.map((item) => (
               <Link
@@ -61,7 +59,6 @@ export default function Navbar({ navItems, handleScroll }) {
             </Link>
           </div>
 
-          {/* Mobile menu dropdown - only visible when open on small screens */}
           {isOpen && (
             <div className="absolute top-full left-0 right-0 md:hidden bg-gradient-to-r from-orange-300 to-blue-400 shadow-lg z-40">
               <div className="flex flex-col items-center py-4 gap-3">
@@ -79,7 +76,6 @@ export default function Navbar({ navItems, handleScroll }) {
                   </Link>
                 ))}
               </div>
-                            {/* Home Button inside Mobile Menu */}
               <Link
                 to="/"
                 onClick={closeMenu}

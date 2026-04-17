@@ -1,9 +1,4 @@
-// src/App.jsx
-import {
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import {Routes,Route,useLocation} from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 
@@ -26,7 +21,6 @@ import AdminDashboard from "./components/Admin/AdminDashboard";
 import PrivacyPolicyPage from "./components/Pages/PrivacyPolicyPage";
 import AboutUsPage from "./components/Pages/Aboutus";
 
-// Reusable marquee component
 function GlobalMarquee() {
   return (
     <div className="bg-gradient-to-r from-orange-600 to-orange-700 text-white shadow-md overflow-hidden">
@@ -64,7 +58,6 @@ function GlobalMarquee() {
   );
 }
 
-// Floating back-to-top button
 function BackToTop() {
   const [visible, setVisible] = useState(false);
 
@@ -89,14 +82,11 @@ function BackToTop() {
   );
 }
 
-// Scroll to top on route change
 function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    // Smooth scroll ya direct top — aap choice kar sakte ho
     window.scrollTo({ top: 0, behavior: "smooth" });
-    // Ya agar instant chahiye: window.scrollTo(0, 0);
   }, [pathname]);
 
   return null;
@@ -106,21 +96,16 @@ function AppContent() {
   const location = useLocation();
   const isHome = location.pathname === "/iec" || location.pathname === "/iec/";
 
-  // Marquee sirf home page pe
   const showMarquee = isHome;
 
-  // Navbar sirf home pe (ya aap chahein to sab jagah dikha sakte ho)
   const showNavbar = isHome;
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Always visible header */}
       <TopBar />
 
-      {/* Marquee – only on home */}
       {showMarquee && <GlobalMarquee />}
 
-      {/* Navbar – only on home (tum chaaho to sab pages pe dikha sakte ho) */}
       {showNavbar && (
         <Navbar
           navItems={[
@@ -149,12 +134,10 @@ function AppContent() {
         />
       )}
 
-      {/* ← Yeh important line hai – har route change pe scroll top */}
       <ScrollToTop />
 
       <main className="flex-grow">
         <Routes>
-          {/* Home */}
           <Route
             path="/"
             element={
@@ -181,10 +164,7 @@ function AppContent() {
             }
           />
 
-          {/* Payment */}
           <Route path="/payment-summary" element={<PaymentSummaryWrapper />} />
-
-          {/* Legal pages */}
           <Route path="/refund-policy" element={<RefundPolicyPage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/contact" element={<ContactPage />} />
@@ -195,7 +175,6 @@ function AppContent() {
           <Route path="/admin" element={<AdminLogin />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
 
-          {/* 404 */}
           <Route
             path="*"
             element={
@@ -216,7 +195,6 @@ function AppContent() {
   );
 }
 
-// Wrapper for consistent styling
 function PaymentSummaryWrapper() {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-12 md:py-16">

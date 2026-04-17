@@ -149,7 +149,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <div className="bg-orange-50 p-5 rounded-lg border border-orange-200">
               <p className="font-medium text-gray-800">
-                Email: <strong>info@india-iecregistration.org</strong><br />
+                Email: <strong>info@incorpfast.org</strong><br />
                 Phone: <strong>+91-9211037448</strong>
               </p>
             </div>
