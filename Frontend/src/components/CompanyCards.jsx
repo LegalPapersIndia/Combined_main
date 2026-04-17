@@ -47,7 +47,7 @@ const companyTypes = [
     Icon: Handshake,
     color: "text-amber-600",
     desc: [
-      "Approval of Company Name",
+      "Company Name Approval",
       "Certificate of Incorporation",
       "PAN & TAN Registration",
       "2 DIN of Partners",
