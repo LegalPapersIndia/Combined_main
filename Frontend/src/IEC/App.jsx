@@ -112,7 +112,7 @@ function AppContent() {
             { label: "IEC REGISTRATION", to: "#registration-form" },
             { label: "IEC MODIFICATION", to: "#registration-form" },
             { label: "IEC RENEWAL/UPDATE", to: "#registration-form" },
-            { label: "ABOUT US", to: "/about-us" },
+            { label: "ABOUT US", to: "/iec/about-us" },
             { label: "PROCEDURE", to: "#procedure" }, 
             { label: "BENEFITS", to: "#benefits" },
             { label: "FAQ'S", to: "#faq" },
