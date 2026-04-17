@@ -24,6 +24,7 @@ import ScrollToHash from './components/common/ScrollToHash';
 
 import AdminDashboard from './components/Admin/AdminDashboard';
 import AdminLogin from './components/Admin/AdminLogin';
+import AboutUsPage from "../Food/components/Pages/Aboutus"; // ✅ About Us Page
 
 
 // ✅ Clear storage
@@ -113,6 +114,7 @@ function AppContent() {
             { label: "FSSAI REGISTRATION", to: "#registration-form" },
             { label: "FSSAI MODIFICATION", to: "#registration-form" },
             { label: "FSSAI RENEWAL/UPDATE", to: "#registration-form" },
+            { label: "ABOUT US", to: "/food/about" },
             { label: "PROCEDURE", to: "#procedure" },
             { label: "BENEFITS", to: "#benefits" },
             { label: "FAQ'S", to: "#faq" },
@@ -189,6 +191,7 @@ function AppContent() {
 
           <Route path="/refund-policy" element={<RefundPolicyPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path='/about' element={<AboutUsPage />} />
           <Route path="/term-condition" element={<TermsAndConditionsPage />} />
           <Route path="/privacy-policy" element={<FSSAIPolicyPage />} />
           <Route path="/disclaimer" element={<DisclaimerPage />} />

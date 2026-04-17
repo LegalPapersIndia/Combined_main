@@ -25,6 +25,7 @@ import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage";
 import FoodAppContent from "./Food/App"; // ✅ Food Registration App
 import GSTAppContent from "./GST/App"; // ✅ GST Registration App
 import IECAppContent from "./IEC/App"; // ✅ IEC Registration App
+import AboutUsPage from "./Pages/about";
 
 function HomePage() {
   return (
@@ -53,6 +54,7 @@ function AppLayout() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/disclaimer" element={<DisclaimerPage />} />
         <Route path="/refund-policy" element={<RefundPolicyPage />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/terms" element={<TermsAndConditionsPage />} />
         <Route path="/privacy" element={<PrivacyPolicyPage />} />
 

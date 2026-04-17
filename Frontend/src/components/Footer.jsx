@@ -61,9 +61,11 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <h4 className="text-slate-900 font-semibold mb-5">Legal</h4>
             <ul className="space-y-3 text-slate-600">
+              <li><Link to="/about-us" className="hover:text-blue-600 transition">About Us</Link></li>
               <li><Link to="/refund-policy" className="hover:text-blue-600 transition">Refund Policy</Link></li>
               <li><Link to="/privacy" className="hover:text-blue-600 transition">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-blue-600 transition">Terms & Conditions</Link></li>
+              
             </ul>
           </div>
 

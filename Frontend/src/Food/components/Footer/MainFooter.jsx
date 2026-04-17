@@ -75,6 +75,7 @@ export default function MainFooter() {
                 { name: "Contact Us", path: "/food/contact" },
                 { name: "Refund Policy", path: "/food/refund-policy" },
                 { name: "Terms & Conditions", path: "/food/term-condition" },
+                { name: "About Us", path: "/food/about" },
                 { name: "Privacy Policy", path: "/food/privacy-policy" },
                 { name: "Disclaimer", path: "/food/disclaimer" },
               ].map((item) => (
