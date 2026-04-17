@@ -24,6 +24,7 @@ import ProtectedRoute from "./components/ProtectedRoute"; // ✅ NEW
 import PrivacyPolicyPage from "./Pages/PrivacyPolicyPage";
 import FoodAppContent from "./Food/App"; // ✅ Food Registration App
 import GSTAppContent from "./GST/App"; // ✅ GST Registration App
+import IECAppContent from "./IEC/App"; // ✅ IEC Registration App
 
 function HomePage() {
   return (
@@ -41,7 +42,7 @@ function HomePage() {
 // ✅ Wrapper component to conditionally show navbar and footer
 function AppLayout() {
   const location = useLocation();
-  const isSubApp = location.pathname.startsWith("/food") || location.pathname.startsWith("/gst");
+  const isSubApp = location.pathname.startsWith("/food") || location.pathname.startsWith("/gst") || location.pathname.startsWith("/iec");
 
   return (
     <>
@@ -67,6 +68,9 @@ function AppLayout() {
 
         {/* ✅ GST Registration Routes */}
         <Route path="/gst/*" element={<GSTAppContent />} />
+
+        {/* ✅ IEC Registration Routes */}
+        <Route path="/iec/*" element={<IECAppContent />} />
 
         {/* ✅ Admin Routes */}
         <Route path="/admin-login" element={<AdminLogin />} />
