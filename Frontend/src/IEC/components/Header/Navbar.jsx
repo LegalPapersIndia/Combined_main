@@ -55,7 +55,7 @@ export default function Navbar({ navItems, handleScroll }) {
           <div className="flex-shrink-0">
             <Link
               to="/"
-              className="hidden sm:flex items-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm px-5 py-2 rounded-full text-xs font-medium text-white border border-white/30 transition-all duration-300 hover:scale-105"
+              className="hidden bg-amber-950 sm:flex items-center gap-2 hover:bg-white/30 backdrop-blur-sm px-5 py-2 rounded-full font-medium text-white border border-white/30 transition-all duration-300 hover:scale-105"
             >
               Home (IncorpFast)
             </Link>
@@ -83,7 +83,7 @@ export default function Navbar({ navItems, handleScroll }) {
               <Link
                 to="/"
                 onClick={closeMenu}
-                className="mt-2 px-6 py-3 text-base font-medium hover:bg-white/20 rounded-lg transition-colors w-full text-center text-white flex items-center justify-center gap-2"
+                className="mt-2 px-6 py-3 text-base bg-amber-950 font-medium hover:bg-white/20 rounded-lg transition-colors w-full text-center text-white flex items-center justify-center gap-2"
               >
                Home (IncorpFast)
               </Link>
