@@ -30,6 +30,7 @@ import AboutUsPage from "./Pages/about";
 // ✅ NEW - Unified Admin Panel Components
 import UnifiedAdminLogin from "./components/AdminPanel/UnifiedAdminLogin";
 import UnifiedAdminPanel from "./components/AdminPanel/UnifiedAdminPanel";
+import TrainingWebinarSection from "./components/Training";
 
 function HomePage() {
   return (
@@ -37,6 +38,7 @@ function HomePage() {
       <Hero />
       <StatsSection />
       <LatestUpdates />
+      <TrainingWebinarSection />
       <BenefitsSection />
       <DocumentsSection />
       <FAQSection />

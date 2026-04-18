@@ -13,9 +13,6 @@ export default function Navbar({ navItems, handleScroll }) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-3">
 
-          {/* Logo / Brand Name (Optional - You can add if needed) */}
-          {/* <Link to="/" className="text-white font-bold text-xl">EASQUES</Link> */}
-
           {/* Hamburger button - Mobile */}
           <button
             className="md:hidden text-white focus:outline-none"
@@ -39,13 +36,13 @@ export default function Navbar({ navItems, handleScroll }) {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex flex-1 justify-center items-center gap-2 lg:gap-6 text-sm lg:text-base font-semibold text-white">
+          <div className="hidden md:flex flex-wrap justify-center items-center gap-2 lg:gap-6 text-sm lg:text-base font-semibold text-white">
             {navItems.map((item) => (
               <Link
                 key={item.label}
                 to={item.to}
                 onClick={(e) => {
-                  handleScroll?.(e, item.to);   // Added optional chaining for safety
+                  handleScroll(e, item.to);
                   closeMenu();
                 }}
                 className="px-4 py-2 hover:bg-white/20 rounded-lg transition-all duration-300 hover:shadow-md hover:text-blue-100 active:scale-95"
@@ -54,49 +51,36 @@ export default function Navbar({ navItems, handleScroll }) {
               </Link>
             ))}
           </div>
-
-          {/* Home Button - Right Side */}
-          <div className="flex-shrink-0">
+                    <div className="flex-shrink-0">
             <Link
               to="/"
-              className="hidden sm:flex items-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm px-5 py-2 rounded-full text-xs font-medium text-white border border-white/30 transition-all duration-300 hover:scale-105"
+              className="hidden bg-amber-950 sm:flex items-center gap-2 hover:bg-white/30 backdrop-blur-sm px-5 py-2 rounded-full font-medium text-white border border-white/30 transition-all duration-300 hover:scale-105"
             >
               Home (IncorpFast)
             </Link>
           </div>
 
-        </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 shadow-lg py-4">
-            <div className="flex flex-col items-center gap-2 px-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.label}
-                  to={item.to}
-                  onClick={(e) => {
-                    handleScroll?.(e, item.to);
-                    closeMenu();
-                  }}
-                  className="px-6 py-3 text-base font-medium hover:bg-white/20 rounded-lg transition-colors w-full text-center text-white"
-                >
-                  {item.label}
-                </Link>
-              ))}
-
-              {/* Home Button inside Mobile Menu */}
-              <Link
-                to="/"
-                onClick={closeMenu}
-                className="mt-2 px-6 py-3 text-base font-medium hover:bg-white/20 rounded-lg transition-colors w-full text-center text-white flex items-center justify-center gap-2"
-              >
-               Home (IncorpFast)
-              </Link>
+          {/* Mobile Menu */}
+          {isOpen && (
+            <div className="absolute top-full left-0 right-0 md:hidden bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-700 shadow-lg z-40">
+              <div className="flex flex-col items-center py-4 gap-3">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.label}
+                    to={item.to}
+                    onClick={(e) => {
+                      handleScroll(e, item.to);
+                      closeMenu();
+                    }}
+                    className="px-6 py-3 text-base font-medium hover:bg-white/20 rounded-lg transition-colors w-full text-center text-white"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
-
+          )}
+        </div>
       </div>
     </nav>
   );

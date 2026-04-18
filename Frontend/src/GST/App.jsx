@@ -24,6 +24,7 @@ import AdminDashboard from './components/Admin/AdminDashboard';
 import AdminLogin from './components/Admin/AdminLogin';
 import DocumentsRequiredSection from './components/Sections/DocumentsRequiredSection';
 import GSTAboutUsPage from './components/Pages/About';
+import GSTTrainingWebinarSection from './components/Sections/Training';
 
 // ✅ Clear storage
 function ClearStorageOnLoad() {
@@ -109,12 +110,13 @@ function AppContent() {
       {isHome && (
         <Navbar
           navItems={[
-            { label: "GST REGISTRATION", to: "#registration-form" },
-            { label: "GST MODIFICATION", to: "#registration-form" },
-            { label: "GST CANCELLATION", to: "#registration-form" },
+            { label: "REGISTRATION", to: "#registration-form" },
+            { label: "MODIFICATION", to: "#registration-form" },
+            { label: "CANCELLATION", to: "#registration-form" },
             { label: "ABOUT US", to: "/gst-registration/about" },
             { label: "PROCEDURE", to: "#procedure" },
-            { label: "DOCUMENTS", to: "#documents" },     // Documents section ke liye
+            { label: "TRAINING", to: "#training" },
+            { label: "DOCUMENTS", to: "#documents" },     
             { label: "BENEFITS", to: "#benefits" },
             { label: "FAQ'S", to: "#faq" },
           ]}
@@ -169,6 +171,7 @@ function AppContent() {
                 <div className="mx-auto max-w-screen-2xl mt-16 space-y-20">
                   <ProcedureSection />
                   <DocumentsRequiredSection id="documents" />   {/* id add kiya navbar ke liye */}
+                  <GSTTrainingWebinarSection id="training" />   {/* id add kiya navbar ke liye */}
                   <BenefitsSection />
                   <FaqSection />
                 </div>

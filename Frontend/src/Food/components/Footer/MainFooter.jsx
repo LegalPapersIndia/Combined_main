@@ -44,9 +44,10 @@ export default function MainFooter() {
 
   <ul className="space-y-2.5 text-sm">
     {[
-      { name: "Apply FSSAI License", to: "/fssai-registration#registration-form" },
-      { name: "FSSAI License Renewal", to: "/fssai-registration#registration-form" },
-      { name: "FSSAI Modification", to: "/fssai-registration#registration-form" },
+      { name: "Apply Certificate", to: "/fssai-registration#registration-form" },
+      { name: "Apply Renewal", to: "/fssai-registration#registration-form" },
+      { name: "Registration Modification", to: "/fssai-registration#registration-form" },
+      { name: "Training", to: "/fssai-registration#training" },
       { name: "Procedure", to: "/fssai-registration#procedure" },
       { name: "Benefits", to: "/fssai-registration#benefits" },
       { name: "FAQs", to: "/fssai-registration#faq" },

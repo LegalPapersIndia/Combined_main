@@ -25,6 +25,7 @@ import ScrollToHash from './components/common/ScrollToHash';
 import AdminDashboard from './components/Admin/AdminDashboard';
 import AdminLogin from './components/Admin/AdminLogin';
 import AboutUsPage from "../Food/components/Pages/Aboutus"; // ✅ About Us Page
+import FSSAITrainingWebinarSection from './components/Sections/Training';
   
 
 // ✅ Clear storage
@@ -111,10 +112,11 @@ function AppContent() {
       {isHome && (
         <Navbar
           navItems={[
-            { label: "FSSAI REGISTRATION", to: "#registration-form" },
-            { label: "FSSAI MODIFICATION", to: "#registration-form" },
-            { label: "FSSAI RENEWAL/UPDATE", to: "#registration-form" },
+            { label: "REGISTRATION", to: "#registration-form" },
+            { label: "MODIFICATION", to: "#registration-form" },
+            { label: "RENEWAL/UPDATE", to: "#registration-form" },
             { label: "ABOUT US", to: "/fssai-registration/about" },
+            { label: "TRAINING", to: "#training" },
             { label: "PROCEDURE", to: "#procedure" },
             { label: "BENEFITS", to: "#benefits" },
             { label: "FAQ'S", to: "#faq" },
@@ -170,6 +172,7 @@ function AppContent() {
 
                 <div className="mx-auto max-w-screen-2xl mt-16 space-y-20">
                   <ProcedureSection />
+                  <FSSAITrainingWebinarSection />
                   <BenefitsSection />
                   <FaqSection />
                 </div>
