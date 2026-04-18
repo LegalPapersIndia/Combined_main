@@ -42,7 +42,7 @@ export default function HeaderTop({ handleScroll }) {
               FAQs
             </Link>
             <Link
-              to="/food/contact"
+              to="/fssai-registration/contact"
               className="hover:text-[#FFECD1] transition-colors"
             >
               Contact Us
@@ -71,7 +71,7 @@ export default function HeaderTop({ handleScroll }) {
         <div className="flex flex-col md:flex-row items-center justify-between gap-5 md:gap-8">
           {/* Logo + Text */}
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-5 md:gap-6 text-center md:text-left">
-            <Link to="/food">
+            <Link to="/fssai-registration">
               <div className="relative group">
                 <img
                   src={Logo}

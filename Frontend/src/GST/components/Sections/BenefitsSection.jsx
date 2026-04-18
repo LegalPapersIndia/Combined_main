@@ -1,4 +1,4 @@
-// src/components/Sections/GSTBenefitsSection.jsx
+// src/components/Sections/gst-registrationBenefitsSection.jsx
 
 export default function GSTBenefitsSection() {
   return (

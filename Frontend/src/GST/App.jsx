@@ -48,7 +48,7 @@ function ScrollToTop() {
 function ProtectedRoute({ children }) {
   const isLoggedIn = sessionStorage.getItem('adminLoggedIn');
   if (!isLoggedIn) {
-    return <Navigate to="/gst/admin" replace />;
+    return <Navigate to="/gst-registration/admin" replace />;
   }
   return children;
 }
@@ -97,7 +97,7 @@ function BackToTop() {
 
 function AppContent() {
   const location = useLocation();
-  const isHome = location.pathname === '/gst' || location.pathname === '/gst/';
+  const isHome = location.pathname === '/gst-registration' || location.pathname === '/gst-registration/';
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -112,7 +112,7 @@ function AppContent() {
             { label: "GST REGISTRATION", to: "#registration-form" },
             { label: "GST MODIFICATION", to: "#registration-form" },
             { label: "GST CANCELLATION", to: "#registration-form" },
-            { label: "ABOUT US", to: "/about" },
+            { label: "ABOUT US", to: "/gst-registration/about" },
             { label: "PROCEDURE", to: "#procedure" },
             { label: "DOCUMENTS", to: "#documents" },     // Documents section ke liye
             { label: "BENEFITS", to: "#benefits" },

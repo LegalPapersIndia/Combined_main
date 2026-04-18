@@ -24,7 +24,7 @@ export default function PaymentSummary() {
       setError("No submitted data found. Starting fresh...");
       setTimeout(() => {
         sessionStorage.removeItem("fssaiSubmittedData");
-        navigate("/food");
+        navigate("/fssai-registration");
       }, 2500);
       return;
     }
@@ -40,13 +40,13 @@ export default function PaymentSummary() {
       console.error("Parse / validation error:", e);
       setError("Invalid or expired data found. Starting fresh...");
       sessionStorage.removeItem("fssaiSubmittedData");
-      setTimeout(() => navigate("/food"), 2500);
+      setTimeout(() => navigate("/fssai-registration"), 2500);
     }
   }, [navigate]);
 
   const handleEdit = () => {
     sessionStorage.setItem("fssaiEditFromPayment", "true");
-    navigate("/food");
+    navigate("/fssai-registration");
   };
 
   const paymentOptions = {

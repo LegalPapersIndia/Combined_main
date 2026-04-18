@@ -42,13 +42,13 @@ export default function MainFooter() {
 
 <ul className="space-y-2.5 text-sm">
           {[
-            { name: "Apply for GST Registration", path: "/gst/#registration-form" },
-            { name: "GST Modification", path: "/gst/#registration-form" },
-            { name: "GST Renewal / Update", path: "/gst/#registration-form" },
-            { name: "Procedure", path: "/gst/#procedure" },
-            { name: "Documents Required", path: "/gst/#documents" },
-            { name: "Benefits", path: "/gst/#benefits" },
-            { name: "FAQs", path: "/gst/#faq" },
+            { name: "Apply for GST Registration", path: "/gst-registration/#registration-form" },
+            { name: "GST Modification", path: "/gst-registration/#registration-form" },
+            { name: "GST Renewal / Update", path: "/gst-registration/#registration-form" },
+            { name: "Procedure", path: "/gst-registration/#procedure" },
+            { name: "Documents Required", path: "/gst-registration/#documents" },
+            { name: "Benefits", path: "/gst-registration/#benefits" },
+            { name: "FAQs", path: "/gst-registration/#faq" },
           ].map((item) => (
             <li key={item.name}>
               <Link
@@ -71,12 +71,12 @@ export default function MainFooter() {
 
             <ul className="space-y-2.5 text-sm">
               {[
-                { name: "Contact Us", path: "/gst/contact" },
-                { name: "Refund Policy", path: "/gst/refund-policy" },
-                { name: "Terms & Conditions", path: "/gst/term-condition" },
-                { name: "About Us", path: "/gst/about" },
-                { name: "Privacy Policy", path: "/gst/privacy-policy" },
-                { name: "Disclaimer", path: "/gst/disclaimer" },
+                { name: "Contact Us", path: "/gst-registration/contact" },
+                { name: "Refund Policy", path: "/gst-registration/refund-policy" },
+                { name: "Terms & Conditions", path: "/gst-registration/term-condition" },
+                { name: "About Us", path: "/gst-registration/about" },
+                { name: "Privacy Policy", path: "/gst-registration/privacy-policy" },
+                { name: "Disclaimer", path: "/gst-registration/disclaimer" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link

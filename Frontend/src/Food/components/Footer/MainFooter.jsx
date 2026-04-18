@@ -44,12 +44,12 @@ export default function MainFooter() {
 
   <ul className="space-y-2.5 text-sm">
     {[
-      { name: "Apply FSSAI License", to: "/food#registration-form" },
-      { name: "FSSAI License Renewal", to: "/food#registration-form" },
-      { name: "FSSAI Modification", to: "/food#registration-form" },
-      { name: "Procedure", to: "/food#procedure" },
-      { name: "Benefits", to: "/food#benefits" },
-      { name: "FAQs", to: "/food#faq" },
+      { name: "Apply FSSAI License", to: "/fssai-registration#registration-form" },
+      { name: "FSSAI License Renewal", to: "/fssai-registration#registration-form" },
+      { name: "FSSAI Modification", to: "/fssai-registration#registration-form" },
+      { name: "Procedure", to: "/fssai-registration#procedure" },
+      { name: "Benefits", to: "/fssai-registration#benefits" },
+      { name: "FAQs", to: "/fssai-registration#faq" },
     ].map((item) => (
       <li key={item.name}>
         <button
@@ -72,12 +72,12 @@ export default function MainFooter() {
 
             <ul className="space-y-2.5 text-sm">
               {[
-                { name: "Contact Us", path: "/food/contact" },
-                { name: "Refund Policy", path: "/food/refund-policy" },
-                { name: "Terms & Conditions", path: "/food/term-condition" },
-                { name: "About Us", path: "/food/about" },
-                { name: "Privacy Policy", path: "/food/privacy-policy" },
-                { name: "Disclaimer", path: "/food/disclaimer" },
+                { name: "Contact Us", path: "/fssai-registration/contact" },
+                { name: "Refund Policy", path: "/fssai-registration/refund-policy" },
+                { name: "Terms & Conditions", path: "/fssai-registration/term-condition" },
+                { name: "About Us", path: "/fssai-registration/about" },
+                { name: "Privacy Policy", path: "/fssai-registration/privacy-policy" },
+                { name: "Disclaimer", path: "/fssai-registration/disclaimer" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link

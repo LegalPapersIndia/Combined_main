@@ -67,9 +67,9 @@ const Navbar = () => {
 
             {/* Service Buttons */}
             <Link
-              to="/food"
+              to="/fssai-registration"
               className={`px-5 py-2.5 rounded-2xl font-semibold text-sm transition-all duration-300 flex items-center gap-2 whitespace-nowrap ${
-                isActive("/food")
+                isActive("/fssai-registration")
                   ? "bg-green-600 text-white shadow-md"
                   : "bg-gradient-to-r from-green-600 to-emerald-600 text-white hover:from-green-700 hover:to-emerald-700 hover:shadow-md"
               }`}
@@ -78,9 +78,9 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="/gst"
+              to="/gst-registration"
               className={`px-5 py-2.5 rounded-2xl font-semibold text-sm transition-all duration-300 flex items-center gap-2 whitespace-nowrap ${
-                isActive("/gst")
+                isActive("/gst-registration")
                   ? "bg-orange-600 text-white shadow-md"
                   : "bg-gradient-to-r from-orange-600 to-amber-600 text-white hover:from-orange-700 hover:to-amber-700 hover:shadow-md"
               }`}
@@ -163,10 +163,10 @@ const Navbar = () => {
               {/* Services in Mobile */}
               <div className="my-4 space-y-3">
                 <Link
-                  to="/food"
+                  to="/fssai-registration"
                   onClick={closeMenu}
                   className={`block px-6 py-4 rounded-2xl font-semibold text-center text-base transition-all ${
-                    isActive("/food")
+                    isActive("/fssai-registration")
                       ? "bg-green-600 text-white"
                       : "bg-gradient-to-r from-green-600 to-emerald-600 text-white"
                   }`}
@@ -175,10 +175,10 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                  to="/gst"
+                  to="/gst-registration"
                   onClick={closeMenu}
                   className={`block px-6 py-4 rounded-2xl font-semibold text-center text-base transition-all ${
-                    isActive("/gst")
+                    isActive("/gst-registration")
                       ? "bg-orange-600 text-white"
                       : "bg-gradient-to-r from-orange-600 to-amber-600 text-white"
                   }`}

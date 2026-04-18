@@ -47,7 +47,7 @@ function HomePage() {
 // ✅ Wrapper component to conditionally show navbar and footer
 function AppLayout() {
   const location = useLocation();
-  const isSubApp = location.pathname.startsWith("/food") || location.pathname.startsWith("/gst") || location.pathname.startsWith("/iec");
+  const isSubApp = location.pathname.startsWith("/fssai-registration") || location.pathname.startsWith("/gst-registration") || location.pathname.startsWith("/iec");
 
   return (
     <>
@@ -73,7 +73,7 @@ function AppLayout() {
         <Route path="/fssai-registration/*" element={<FoodAppContent />} />
 
         {/* ✅ GST Registration Routes */}
-        <Route path="/gst/*" element={<GSTAppContent />} />
+        <Route path="/gst-registration/*" element={<GSTAppContent />} />
 
         {/* ✅ IEC Registration Routes */}
         <Route path="/iec/*" element={<IECAppContent />} />

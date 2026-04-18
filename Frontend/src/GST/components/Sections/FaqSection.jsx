@@ -1,4 +1,4 @@
-// src/components/Sections/GSTFAQSection.jsx
+// src/components/Sections/gst-registrationFAQSection.jsx
 
 export default function GSTFAQSection() {
   return (

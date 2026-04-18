@@ -1,4 +1,4 @@
-// src/components/Pages/GSTPolicyPage.jsx
+// src/components/Pages/gst-registrationPolicyPage.jsx
 
 export default function GSTPolicyPage() {
   return (

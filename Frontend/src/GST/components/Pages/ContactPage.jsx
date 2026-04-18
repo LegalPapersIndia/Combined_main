@@ -1,4 +1,4 @@
-// src/components/Pages/GSTContactPage.jsx
+// src/components/Pages/gst-registrationContactPage.jsx
 import { FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa';
 
 export default function ContactPage() {

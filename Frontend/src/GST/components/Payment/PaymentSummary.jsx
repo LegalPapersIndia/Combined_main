@@ -24,7 +24,7 @@ export default function PaymentSummary() {
       setError("No submitted data found. Starting fresh...");
       setTimeout(() => {
         sessionStorage.removeItem("gstSubmittedData");
-        navigate("/gst/");
+        navigate("/gst-registration/");
       }, 2500);
       return;
     }
@@ -40,13 +40,13 @@ export default function PaymentSummary() {
       console.error("Parse / validation error:", e);
       setError("Invalid or expired data found. Starting fresh...");
       sessionStorage.removeItem("gstSubmittedData");
-      setTimeout(() => navigate("/gst/"), 2500);
+      setTimeout(() => navigate("/gst-registration/"), 2500);
     }
   }, [navigate]);
 
   const handleEdit = () => {
     sessionStorage.setItem("gstEditFromPayment", "true");
-    navigate("/gst/");
+    navigate("/gst-registration/");
   };
 
   // Single Payment Option for GST

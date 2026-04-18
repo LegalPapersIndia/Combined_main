@@ -152,7 +152,7 @@ export default function AboutUsPage() {
             </div>
           </div>
           <Link 
-            to="/food/contact"
+            to="/fssai-registration/contact"
             className="mt-8 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3.5 rounded-full transition-colors duration-300 text-lg"
           >
             Visit Our Full Contact Page

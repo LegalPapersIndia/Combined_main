@@ -1,4 +1,4 @@
-// src/components/Sections/GSTProcedureSection.jsx
+// src/components/Sections/gst-registrationProcedureSection.jsx
 
 import fill from "../../Assest/2.png";
 import pay from "../../Assest/3.png";

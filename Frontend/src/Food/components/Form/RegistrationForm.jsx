@@ -319,7 +319,7 @@ try {
   });
 
   setTimeout(() => {
-    navigate("/food/payment-summary");
+    navigate("/fssai-registration/payment-summary");
   }, 1200);
 
 } catch (err) {

@@ -43,7 +43,7 @@ export default function HeaderTop({ handleScroll }) {
             >
               FAQs
             </Link>
-            <Link to="/gst/contact" className="hover:text-white transition-colors">
+            <Link to="/gst-registration/contact" className="hover:text-white transition-colors">
               Contact Us
             </Link>
           </div>
@@ -69,7 +69,7 @@ export default function HeaderTop({ handleScroll }) {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
           
           {/* Logo + Title Section */}
-          <Link to="/gst" className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center md:text-left group">
+          <Link to="/gst-registration" className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center md:text-left group">
             {/* Logo */}
             <div className="relative">
               <img

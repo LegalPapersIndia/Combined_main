@@ -1,4 +1,4 @@
-// src/components/Form/GSTRegistrationForm.jsx
+// src/components/Form/gst-registrationRegistrationForm.jsx
 
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";

@@ -136,7 +136,7 @@ export default function PaymentSummary() {
     }
     else if (formType === "gst") {
       sessionStorage.setItem("gstEditFromPayment", "true");
-      navigate("/gst/");
+      navigate("/gst-registration/");
     }
     else if (formType === "iec") {
       sessionStorage.setItem("iecEditFromPayment", "true");

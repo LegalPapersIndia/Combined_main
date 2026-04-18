@@ -1,4 +1,4 @@
-// src/components/Pages/GSTDisclaimerPage.jsx
+// src/components/Pages/gst-registrationDisclaimerPage.jsx
 
 export default function GSTDisclaimerPage() {
   return (
