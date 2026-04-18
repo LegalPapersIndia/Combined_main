@@ -30,8 +30,6 @@ export default function UnifiedAdminLogin() {
       }
 
       const data = await response.json();
-
-      // Store token in localStorage
       localStorage.setItem('adminToken', data.token);
       localStorage.setItem('adminData', JSON.stringify(data.admin));
 
@@ -56,8 +54,6 @@ export default function UnifiedAdminLogin() {
           <h1 className="text-3xl font-bold text-gray-800">Admin Portal</h1>
           <p className="text-gray-500 mt-2">Unified Lead Management</p>
         </div>
-
-        {/* Error Message */}
         {error && (
           <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-6">
             <p className="font-semibold">❌ Error</p>
