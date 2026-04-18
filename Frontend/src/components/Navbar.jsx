@@ -67,7 +67,7 @@ const Navbar = () => {
 
             {/* Service Buttons */}
             <Link
-              to="/fssai-registration"
+              to="/food"
               className={`px-5 py-2.5 rounded-2xl font-semibold text-sm transition-all duration-300 flex items-center gap-2 whitespace-nowrap ${
                 isActive("/food")
                   ? "bg-green-600 text-white shadow-md"
