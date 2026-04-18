@@ -99,7 +99,7 @@ function BackToTop() {
 
 function AppContent() {
   const location = useLocation();
-  const isHome = location.pathname === '/' || location.pathname === '/food' || location.pathname === '/food/';
+  const isHome = location.pathname === '/' || location.pathname === '/fssai-registration' || location.pathname === '/fssai-registration/';
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -114,7 +114,7 @@ function AppContent() {
             { label: "FSSAI REGISTRATION", to: "#registration-form" },
             { label: "FSSAI MODIFICATION", to: "#registration-form" },
             { label: "FSSAI RENEWAL/UPDATE", to: "#registration-form" },
-            { label: "ABOUT US", to: "/food/about" },
+            { label: "ABOUT US", to: "/fssai-registration/about" },
             { label: "PROCEDURE", to: "#procedure" },
             { label: "BENEFITS", to: "#benefits" },
             { label: "FAQ'S", to: "#faq" },

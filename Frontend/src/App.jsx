@@ -70,7 +70,7 @@ function AppLayout() {
         <Route path="/payment-summary" element={<PaymentSummary />} />
 
         {/* ✅ Food Registration Routes */}
-        <Route path="/food/*" element={<FoodAppContent />} />
+        <Route path="/fssai-registration/*" element={<FoodAppContent />} />
 
         {/* ✅ GST Registration Routes */}
         <Route path="/gst/*" element={<GSTAppContent />} />
