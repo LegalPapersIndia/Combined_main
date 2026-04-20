@@ -22,7 +22,7 @@ export default function FSSAIPolicyPage() {
           </p>
           <p className="leading-relaxed">
             We are committed to protecting your personal information while providing 
-            professional consultancy services for <strong>FSSAI Registration and Food License Compliance</strong>.
+            professional consultancy services for <strong>Registration and Food License Compliance</strong>.
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export default function FSSAIPolicyPage() {
             </h2>
             <p className="text-gray-700 leading-relaxed">
               This website is a privately owned portal operated by a professional consultancy firm. 
-              We provide assistance and guidance for FSSAI Basic Registration, State License, Central License, 
+              We provide assistance and guidance for Basic Registration, State License, Central License, 
               Renewal, Modification and other food safety compliance services.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
@@ -55,7 +55,7 @@ export default function FSSAIPolicyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li><strong>Personal Information:</strong> Full name, email address, mobile number, address, PAN card, Aadhaar number (if required), and business details.</li>
-              <li><strong>Business Information:</strong> Food business name, type of business, premises details, and other information required for FSSAI application.</li>
+              <li><strong>Business Information:</strong> Food business name, type of business, premises details, and other information required for application.</li>
               <li><strong>Payment Information:</strong> We do not store complete card/bank details. All payments are processed securely via third-party payment gateways.</li>
               <li><strong>Technical Data:</strong> IP address, browser type, device information collected through cookies.</li>
             </ul>
@@ -69,7 +69,7 @@ export default function FSSAIPolicyPage() {
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start gap-3">
                 <span className="text-green-600 text-xl font-bold mt-1">•</span>
-                <span>To provide consultancy and support for your FSSAI registration / license application.</span>
+                <span>To provide consultancy and support for your registration / license application.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-green-600 text-xl font-bold mt-1">•</span>
@@ -98,8 +98,8 @@ export default function FSSAIPolicyPage() {
               We may share your information only when:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>It is necessary for processing your FSSAI application through authorized channels.</li>
-              <li>Required by law or government authorities (FSSAI / Food Safety Department).</li>
+              <li>It is necessary for processing your application through authorized channels.</li>
+              <li>Required by law or government authorities (Food Safety Department).</li>
               <li>With trusted service providers who assist us under strict confidentiality agreements.</li>
             </ul>
           </section>
@@ -163,7 +163,7 @@ export default function FSSAIPolicyPage() {
           <section className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 text-center border border-green-200">
             <p className="text-lg text-gray-800 font-medium">
               We are committed to safeguarding your privacy and maintaining transparency 
-              in all our FSSAI consultancy services. Thank you for trusting us.
+              in all our consultancy services. Thank you for trusting us.
             </p>
           </section>
 

@@ -12,7 +12,7 @@ export default function FSSAIDisclaimerPage() {
               Disclaimer Policy
             </h1>
             <p className="text-lg md:text-xl opacity-90">
-              Important Information Regarding Our FSSAI Consultancy Services
+              Important Information Regarding Our Registration Consultancy Services
             </p>
           </div>
 
@@ -23,7 +23,7 @@ export default function FSSAIDisclaimerPage() {
             <p className="text-lg mb-6">
               <strong className="text-green-600">
                 The fees charged on this website are purely consultancy fees
-                for professional assistance and guidance related to FSSAI
+                for professional assistance and guidance related to
                 registration and compliance.
               </strong>
             </p>
@@ -32,7 +32,7 @@ export default function FSSAIDisclaimerPage() {
             <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded-md mb-8">
               <p className="font-semibold text-emerald-900 text-lg">
                 This website is a privately owned portal and is not affiliated
-                with the Food Safety and Standards Authority of India (FSSAI)
+                with the Food Safety and Standards Authority of India
                 or any Government department.
               </p>
             </div>
@@ -44,7 +44,7 @@ export default function FSSAIDisclaimerPage() {
                 firm providing professional services related to food business
                 licensing and regulatory compliance. We do not represent or
                 claim any official association with the Food Safety and
-                Standards Authority of India (FSSAI) or any Government
+                Standards Authority of India or any Government
                 authority.
               </p>
 
@@ -52,21 +52,21 @@ export default function FSSAIDisclaimerPage() {
                 This is <strong>not an official Government website</strong>.
                 The forms available on this portal are designed only to collect
                 basic information from individuals or businesses interested in
-                FSSAI registration services so that our consultants can provide
+                 registration services so that our consultants can provide
                 appropriate guidance and assistance.
               </p>
 
               <p>
                 Our consultancy services include assistance with the following
-                FSSAI-related services:
+                registration-related services:
               </p>
 
               <ul className="list-disc pl-6 space-y-2">
-                <li>FSSAI Basic Registration</li>
-                <li>FSSAI State License</li>
-                <li>FSSAI Central License</li>
-                <li>FSSAI License Renewal</li>
-                <li>FSSAI Modification / Amendment</li>
+                <li>Basic Registration</li>
+                <li>State License</li>
+                <li>Central License</li>
+                <li>License Renewal</li>
+                <li>Modification / Amendment</li>
                 <li>Food Business Compliance Guidance</li>
                 <li>Application filing and documentation support</li>
               </ul>

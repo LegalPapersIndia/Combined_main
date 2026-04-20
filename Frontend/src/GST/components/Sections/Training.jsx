@@ -31,8 +31,8 @@ export default function GSTTrainingWebinarSection() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-sky-500 mx-auto mb-6 rounded-full"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Expert-led GST training programs and informative webinars to help businesses 
-            understand GST rules, compliance, filing procedures, and best practices.
+            Expert-led training programs and informative webinars to help businesses 
+            understand registration rules, compliance, filing procedures, and best practices.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function GSTTrainingWebinarSection() {
         <div className="mb-20">
           <h3 className="text-2xl font-semibold text-center text-gray-800 mb-10 flex items-center justify-center gap-3">
             <FaChalkboardTeacher className="text-blue-600" aria-hidden="true" />
-            Our GST Training Programs
+            Our Registration Training Programs
           </h3>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -49,9 +49,9 @@ export default function GSTTrainingWebinarSection() {
               <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <FaFileInvoice size={32} aria-hidden="true" title="GST Registration" />
               </div>
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">GST Registration &amp; Compliance</h4>
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">Registration &amp; Compliance</h4>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Complete training on GST registration process, choosing between Regular and Composition Scheme, 
+                Complete training on registration process, choosing between Regular and Composition Scheme, 
                 documentation, and maintaining ongoing compliance.
               </p>
               <div className="flex items-center gap-2 text-sm text-blue-700">
@@ -94,7 +94,7 @@ export default function GSTTrainingWebinarSection() {
               <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <FaFileAlt size={32} aria-hidden="true" title="E-commerce & Export" />
               </div>
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">GST for E-commerce &amp; Export</h4>
+              <h4 className="text-2xl font-bold text-gray-900 mb-4">Registration for E-commerce &amp; Export</h4>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Special training covering rules for online sellers, LUT filing, 
                 zero-rated supplies, and export refunds.
@@ -117,27 +117,27 @@ export default function GSTTrainingWebinarSection() {
             {[
               {
                 icon: <FaFileAlt className="text-sky-600" size={28} aria-hidden="true" title="Registration Guide" />,
-                title: "How to Register for GST in 2026",
-                desc: "Step-by-step guide for new GST registration with latest requirements and common mistakes to avoid."
+                title: "How to Register for Registration in 2026",
+                desc: "Step-by-step guide for new registration with latest requirements and common mistakes to avoid."
               },
               {
                 icon: <FaBalanceScale className="text-sky-600" size={28} aria-hidden="true" title="Scheme Comparison" />,
                 title: "Composition Scheme vs Regular Scheme",
-                desc: "Clear comparison to help small businesses choose the right GST scheme."
+                desc: "Clear comparison to help small businesses choose the right registration scheme."
               },
               {
                 icon: <FaFileInvoice className="text-sky-600" size={28} aria-hidden="true" title="Latest Updates" />,
-                title: "Latest GST Updates & Notifications",
+                title: "Latest Registration Updates & Notifications",
                 desc: "Monthly webinar covering recent changes, new rules, and important government notifications."
               },
               {
                 icon: <FaCheckCircle className="text-sky-600" size={28} aria-hidden="true" title="Notice Handling" />,
-                title: "How to Handle GST Notices Effectively",
-                desc: "Practical tips on responding to GST notices, SCN, and avoiding penalties."
+                title: "How to Handle Registration Notices Effectively",
+                desc: "Practical tips on responding to registration notices, SCN, and avoiding penalties."
               },
               {
                 icon: <FaCertificate className="text-sky-600" size={28} aria-hidden="true" title="Beginner Session" />,
-                title: "GST Basics for Beginners & Startups",
+                title: "Registration Basics for Beginners & Startups",
                 desc: "Easy-to-understand session specially designed for new entrepreneurs and small businesses."
               }
             ].map((webinar, index) => (
@@ -163,7 +163,7 @@ export default function GSTTrainingWebinarSection() {
         <div className="bg-white rounded-3xl p-10 md:p-14 shadow-xl border border-blue-100">
           <h4 className="text-2xl font-semibold text-center text-gray-900 mb-10 flex items-center justify-center gap-3">
             <FaCertificate className="text-blue-600" aria-hidden="true" />
-            Why Join Our GST Training?
+            Why Join Our Registration Training?
           </h4>
           
           <div className="grid md:grid-cols-4 gap-8 text-center">
@@ -180,7 +180,7 @@ export default function GSTTrainingWebinarSection() {
                 <FaHandsHelping size={28} aria-hidden="true" title="Expert Guidance" />
               </div>
               <strong className="block text-lg text-gray-800">Expert Trainers</strong>
-              <p className="text-sm text-gray-600 mt-1">Professionals with practical GST experience</p>
+              <p className="text-sm text-gray-600 mt-1">Professionals with practical registration experience</p>
             </div>
 
             <div className="flex flex-col items-center">

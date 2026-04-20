@@ -57,12 +57,12 @@ export default function HeaderTop({ handleScroll }) {
           <div className="marquee whitespace-nowrap text-xs sm:text-sm md:text-base font-medium tracking-wide">
             <span className="px-6 sm:px-10 md:px-14 text-center">
               A MANUFACTURER OF THE PACKED FOOD PRODUCTS AND IMPORT, EXPORT,
-              E-COMMERCE ARE NOT ELIGIBLE FOR FSSAI REGISTRATION...
+              E-COMMERCE ARE NOT ELIGIBLE FOR REGISTRATION...
             </span>
 
             <span className="px-6 sm:px-10 md:px-14 text-center">
               A MANUFACTURER OF THE PACKED FOOD PRODUCTS AND IMPORT, EXPORT,
-              E-COMMERCE ARE NOT ELIGIBLE FOR FSSAI REGISTRATION...
+              E-COMMERCE ARE NOT ELIGIBLE FOR REGISTRATION...
             </span>
           </div>
         </div>

@@ -12,8 +12,8 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            We're here to help you with your GST Registration, Modification, 
-            Cancellation, or any GST Compliance needs. Reach out to us anytime!
+            We're here to help you with your Registration, Modification, 
+            Cancellation, or any Registration Compliance needs. Reach out to us anytime!
           </p>
         </div>
 
@@ -77,13 +77,13 @@ export default function ContactPage() {
         <div className="mt-16 text-center">
           <p className="text-gray-600 text-lg mb-6 max-w-2xl mx-auto">
             Prefer to reach us instantly? Use the phone number or email above — 
-            our team is ready to assist you with GST New Registration, Composition Scheme, 
-            Regular Scheme, Modification, or any GST compliance queries.
+            our team is ready to assist you with Registration, Composition Scheme, 
+            Regular Scheme, Modification, or any Registration compliance queries.
           </p>
           
           <p className="text-sm text-gray-500">
             We are a private consultancy firm helping businesses across India 
-            with hassle-free GST registration and compliance services.
+            with hassle-free Registration and compliance services.
           </p>
         </div>
 

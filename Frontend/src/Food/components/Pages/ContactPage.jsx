@@ -12,7 +12,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            We're here to help you with your FSSAI Registration, License, Renewal, 
+            We're here to help you with your Registration, License, Renewal, 
             or any Food Safety Compliance needs. Reach out to us anytime!
           </p>
         </div>
@@ -77,13 +77,13 @@ export default function ContactPage() {
         <div className="mt-16 text-center">
           <p className="text-gray-600 text-lg mb-6 max-w-2xl mx-auto">
             Prefer to reach us instantly? Use the phone number or email above — 
-            our team is ready to assist you with FSSAI Basic Registration, State License, 
+            our team is ready to assist you with Basic Registration, State License, 
             Central License, Renewal, Modification, or any food business compliance queries.
           </p>
           
           <p className="text-sm text-gray-500">
             We are a private consultancy firm helping food businesses across India 
-            with hassle-free FSSAI licensing and compliance services.
+            with hassle-free Registration and compliance services.
           </p>
         </div>
 

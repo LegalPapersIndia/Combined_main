@@ -53,7 +53,7 @@ export default function PaymentSummary() {
   const paymentOption = {
     amount: "₹ 5,999",
     link: "https://www.instamojo.com/@LegalPapersIndia/l52d2d917f393479baf14f1e829a0a65c/",
-    title: "Complete GST Registration Package"
+    title: "Complete Registration Package"
   };
 
   const handlePay = async () => {
@@ -127,14 +127,14 @@ export default function PaymentSummary() {
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-700 to-indigo-700 text-white py-12 px-8 md:px-12 text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
-            GST Application Summary & Payment
+            Application Summary & Payment
           </h1>
           <p className="text-lg md:text-xl opacity-90">Please review your details before proceeding</p>
         </div>
 
         <div className="p-6 md:p-10 lg:p-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-8 lg:mb-10 text-center">
-            Your GST Application Details
+            Your Application Details
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
@@ -164,7 +164,7 @@ export default function PaymentSummary() {
         <div className="p-8 md:p-12 bg-gray-50 border-t border-gray-100">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Complete GST Registration Package
+              Complete Registration Package
             </h2>
             <p className="text-lg text-gray-600 mb-8">
               Includes document preparation, filing, and departmental follow-up

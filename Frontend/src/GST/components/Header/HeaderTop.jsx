@@ -55,10 +55,10 @@ export default function HeaderTop({ handleScroll }) {
         <div className="marquee-container relative w-full h-6 sm:h-8 overflow-hidden flex items-center">
           <div className="marquee flex whitespace-nowrap text-xs sm:text-sm md:text-base font-medium tracking-wide animate-marquee">
             <span className="px-6 sm:px-10 md:px-14 text-center">
-              THIS IS A PRIVATE CONSULTANCY PORTAL FOR GST REGISTRATION. PORTAL FEES ARE CONSULTANCY CHARGES AND NOT GOVERNMENT FEES...
+              ⚠️ THIS IS A PRIVATE CONSULTANCY PORTAL FOR REGISTRATION. PORTAL FEES ARE CONSULTANCY CHARGES AND NOT GOVERNMENT FEES...
             </span>
             <span className="px-6 sm:px-10 md:px-14 text-center">
-              THIS IS A PRIVATE CONSULTANCY PORTAL FOR GST REGISTRATION. PORTAL FEES ARE CONSULTANCY CHARGES AND NOT GOVERNMENT FEES...
+             ⚠️ THIS IS A PRIVATE CONSULTANCY PORTAL FOR REGISTRATION. PORTAL FEES ARE CONSULTANCY CHARGES AND NOT GOVERNMENT FEES...
             </span>
           </div>
         </div>
@@ -88,9 +88,6 @@ export default function HeaderTop({ handleScroll }) {
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight text-blue-950">
                   भारतीय जीएसटी पंजीकरण कंसल्टेंसी ऑनलाइन पोर्टल
                 </h2>
-                <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold mt-1 text-blue-900">
-                  INDIA'S GST REGISTRATION CONSULTANCY ONLINE PORTAL
-                </p>
               </div>
             </div>
           </Link>

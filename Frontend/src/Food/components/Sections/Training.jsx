@@ -32,7 +32,7 @@ export default function FSSAITrainingWebinarSection() {
           <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-orange-500 mx-auto mb-6 rounded-full"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Expert-led training programs and informative webinars designed to help food businesses 
-            understand FSSAI rules, food safety practices, and compliance requirements.
+            understand rules, food safety practices, and compliance requirements.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function FSSAITrainingWebinarSection() {
               </div>
               <h4 className="text-2xl font-bold text-gray-800 mb-4">Food Safety &amp; Compliance</h4>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Complete guide to FSSAI licensing, documentation, FSMS implementation, 
+                Complete guide to licensing, documentation, FSMS implementation, 
                 and how to stay compliant with current regulations.
               </p>
               <div className="flex items-center gap-2 text-sm text-green-700">

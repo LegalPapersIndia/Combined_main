@@ -21,7 +21,7 @@ export default function TermsAndConditionsPage() {
           </p>
           <p className="leading-relaxed">
             This is a <span className="font-bold text-green-700">private consultancy portal</span> providing assistance for 
-            <span className="font-bold text-green-700"> FSSAI Food License Registration</span>. 
+            <span className="font-bold text-green-700">Food Registration</span>. 
             All portal fees are <span className="font-bold text-green-700">consultancy in nature</span> and are not government fees.
           </p>
         </div>

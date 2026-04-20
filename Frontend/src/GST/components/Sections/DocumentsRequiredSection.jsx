@@ -72,7 +72,7 @@ export default function DocumentsRequiredSection() {
             📋 REQUIRED DOCUMENTS
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
-            Documents Required for<br />GST Registration
+            Documents Required for<br /> Registration
           </h2>
           <p className="mt-5 text-lg text-gray-600 max-w-2xl mx-auto">
             Select your business type to see the exact documents needed.

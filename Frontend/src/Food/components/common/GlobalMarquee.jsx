@@ -5,10 +5,10 @@ export default function GlobalMarquee() {
       <div className="marquee-container relative w-full">
         <div className="marquee inline-flex whitespace-nowrap text-sm font-medium tracking-wide py-2">
           <span className="mx-16">
-            This is a private consultancy self-registration portal for obtaining FSSAI registration. Portal fees are consultancy in nature.
+           ⚠️ This is a private consultancy self-registration portal for obtaining Food registration Certificate. Portal fees are consultancy in nature.
           </span>
           <span className="mx-16">
-            This is a private consultancy self-registration portal for obtaining FSSAI registration. Portal fees are consultancy in nature.
+           ⚠️ This is a private consultancy self-registration portal for obtaining Food registration Certificate. Portal fees are consultancy in nature.
           </span>
         </div>
       </div>

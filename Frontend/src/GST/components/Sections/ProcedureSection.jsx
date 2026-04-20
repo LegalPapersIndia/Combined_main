@@ -30,8 +30,8 @@ export default function ProcedureSection() {
     },
     {
       number: "4",
-      title: "Receive GST Certificate",
-      description: "Our experts process your application and deliver your GST registration certificate.",
+      title: "Receive Certificate",
+      description: "Our experts process your application and deliver your registration certificate.",
       imageSrc: certi,
       iconClass: "w-20 h-20 md:w-28 md:h-28",
     },
@@ -45,10 +45,10 @@ export default function ProcedureSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-10 max-w-7xl">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-            Easy 4-Step Process to Get Your GST Registration
+            Easy 4-Step Process to Get Your Registration
           </h2>
           <p className="mt-4 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium">
-            Apply for GST Registration online with a simple, fast and hassle-free process.
+            Apply for Registration online with a simple, fast and hassle-free process.
           </p>
         </div>
 
@@ -100,7 +100,7 @@ export default function ProcedureSection() {
 
         <div className="text-center mt-12 md:mt-16">
           <p className="text-gray-700 text-lg md:text-xl font-medium">
-            Most GST applications are processed in <span className="text-blue-600 font-bold">3-7 working days</span>.
+            Most Registration applications are processed in <span className="text-blue-600 font-bold">3-7 working days</span>.
           </p>
           <p className="mt-2 text-gray-500 text-base">
             100% online process – No office visit required

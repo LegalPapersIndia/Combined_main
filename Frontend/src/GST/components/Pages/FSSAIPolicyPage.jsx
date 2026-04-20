@@ -22,7 +22,7 @@ export default function GSTPolicyPage() {
           </p>
           <p className="leading-relaxed">
             We are committed to protecting your personal information while providing 
-            professional consultancy services for <strong>GST Registration and Tax Compliance</strong>.
+            professional consultancy services for <strong>Registration and Tax Compliance</strong>.
           </p>
         </div>
 
@@ -36,8 +36,8 @@ export default function GSTPolicyPage() {
             </h2>
             <p className="text-gray-700 leading-relaxed">
               This website is a privately owned portal operated by a professional consultancy firm. 
-              We provide assistance and guidance for GST New Registration, Composition Scheme, 
-              Regular Registration, Modification, Cancellation and other GST compliance services.
+              We provide assistance and guidance for New Registration, Composition Scheme, 
+              Regular Registration, Modification, Cancellation and other Registration compliance services.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
               This Privacy Policy explains how we collect, use, store, and protect your personal information 
@@ -55,7 +55,7 @@ export default function GSTPolicyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li><strong>Personal Information:</strong> Full name, email address, mobile number, address, PAN card, Aadhaar number (if required), and business details.</li>
-              <li><strong>Business Information:</strong> Company / Firm name, constitution of business, nature of business activity, turnover details, and other information required for GST application.</li>
+              <li><strong>Business Information:</strong> Company / Firm name, constitution of business, nature of business activity, turnover details, and other information required for application.</li>
               <li><strong>Payment Information:</strong> We do not store complete card/bank details. All payments are processed securely via third-party payment gateways.</li>
               <li><strong>Technical Data:</strong> IP address, browser type, device information collected through cookies.</li>
             </ul>
@@ -69,7 +69,7 @@ export default function GSTPolicyPage() {
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 text-xl font-bold mt-1">•</span>
-                <span>To provide consultancy and support for your GST registration / compliance application.</span>
+                <span>To provide consultancy and support for your Registration / compliance application.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-blue-600 text-xl font-bold mt-1">•</span>
@@ -98,7 +98,7 @@ export default function GSTPolicyPage() {
               We may share your information only when:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>It is necessary for processing your GST application through authorized channels.</li>
+              <li>It is necessary for processing your application through authorized channels.</li>
               <li>Required by law or government authorities (GSTN / CBIC / Tax Department).</li>
               <li>With trusted service providers who assist us under strict confidentiality agreements.</li>
             </ul>
@@ -163,7 +163,7 @@ export default function GSTPolicyPage() {
           <section className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl p-8 text-center border border-blue-200">
             <p className="text-lg text-gray-800 font-medium">
               We are committed to safeguarding your privacy and maintaining transparency 
-              in all our GST consultancy services. Thank you for trusting us.
+              in all our Registration consultancy services. Thank you for trusting us.
             </p>
           </section>
 

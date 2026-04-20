@@ -63,11 +63,11 @@ function PrivateConsultancyMarquee() {
       <div className="marquee-container relative w-full">
         <div className="marquee inline-flex whitespace-nowrap text-sm font-medium tracking-wide">
           <span className="mx-16">
-            This is a private consultancy self-registration portal for FSSAI license. 
+           ⚠️ This is a private consultancy self-registration portal for Food Registration Certificate. 
             Portal fees are consultancy in nature.
           </span>
           <span className="mx-16">
-            This is a private consultancy self-registration portal for FSSAI license. 
+           ⚠️ This is a private consultancy self-registration portal for Food Registration Certificate. 
             Portal fees are consultancy in nature.
           </span>
         </div>

@@ -23,7 +23,7 @@ export default function RefundPolicyPage() {
 
           <p className="leading-relaxed mb-4">
             We offer a fair and transparent refund policy for our consultancy services related to 
-            <strong> GST registration and tax compliance services</strong>.
+            <strong> Registration and tax compliance services</strong>.
             Refunds are processed only if we are unable to deliver the committed service due to our fault.
           </p>
 
@@ -50,7 +50,7 @@ export default function RefundPolicyPage() {
 
             <p className="text-gray-700 leading-relaxed">
               We follow a <strong>money-back guarantee policy</strong> if we are unable to process your 
-              GST registration or compliance service as committed by us.
+              registration or compliance service as committed by us.
             </p>
           </section>
 
@@ -83,8 +83,8 @@ export default function RefundPolicyPage() {
                 <span className="text-blue-600 text-xl font-bold mt-1">•</span>
                 <span>
                   <strong>No refund</strong> shall be issued if the application has been processed as per 
-                  government guidelines but the GST registration or certificate issuance is delayed by 
-                  GST authorities.
+                  government guidelines but the Registration or certificate issuance is delayed by 
+                  government authorities.
                 </span>
               </li>
 
@@ -92,7 +92,7 @@ export default function RefundPolicyPage() {
                 <span className="text-blue-600 text-xl font-bold mt-1">•</span>
                 <span>
                   Any <strong>government fee, challan, or statutory charges</strong> paid during the
-                  processing of GST registration will be deducted from the refund amount.
+                  processing of Registration will be deducted from the refund amount.
                 </span>
               </li>
 
@@ -134,7 +134,7 @@ export default function RefundPolicyPage() {
           <section className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl p-8 text-center border border-blue-200">
             <p className="text-lg text-gray-800 font-medium">
               We value your trust and are committed to providing transparent and reliable 
-              consultancy services for GST registration and tax compliance.
+              consultancy services for Registration and tax compliance.
             </p>
           </section>
 

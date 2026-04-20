@@ -337,7 +337,7 @@ try {
   return (
     <div id="registration-form" className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-200/80 max-w-4xl mx-auto">
       <div className="bg-gradient-to-r from-green-700 to-emerald-900 text-white py-6 text-center text-2xl md:text-3xl font-bold tracking-wide shadow-md">
-        FSSAI REGISTRATION FORM
+         REGISTRATION FORM
       </div>
 
       <form onSubmit={handleSubmit} className="p-6 md:p-10 lg:p-12 space-y-8">

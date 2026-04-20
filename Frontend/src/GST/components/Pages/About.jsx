@@ -12,7 +12,7 @@ export default function GSTAboutUsPage() {
             About EASQUES
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            Your trusted private consultancy partner for GST Registration, Compliance, 
+            Your trusted private consultancy partner for Registration, Compliance, 
             Business Certifications, Company Incorporation & Professional Training.
           </p>
         </div>
@@ -21,16 +21,16 @@ export default function GSTAboutUsPage() {
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 mb-16">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Simplifying GST & Business Compliance Across India
+              Simplifying & Business Compliance Across India
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               EASQUES is a professional private consultancy firm specializing in 
-              <strong> GST Registration and Compliance Services</strong>, along with 
+              <strong> Registration and Compliance Services</strong>, along with 
               company incorporation, various business certifications, and practical training programs.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
               We help startups, small businesses, and established enterprises navigate the complexities 
-              of GST law with ease. From new registration and scheme selection to filing, modification, 
+              of Registration law with ease. From new registration and scheme selection to filing, modification, 
               and cancellation — our expert team provides complete end-to-end support.
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function GSTAboutUsPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">GST Services</h3>
               <p className="text-gray-600">
-                New GST Registration, Composition Scheme, Regular Scheme, 
+                New Registration, Composition Scheme, Regular Scheme, 
                 Modification, Cancellation, Return Filing, and complete GST compliance support.
               </p>
             </div>
@@ -152,10 +152,10 @@ export default function GSTAboutUsPage() {
           </div>
           
           <Link 
-            to="/contact"
+            to="/gst-registration/contact"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3.5 rounded-full transition-colors duration-300 text-lg"
           >
-            Visit Our GST Contact Page
+            Visit Our Contact Page
           </Link>
         </div>
 
@@ -163,8 +163,8 @@ export default function GSTAboutUsPage() {
         <div className="text-center text-sm text-gray-500 max-w-2xl mx-auto">
           <p>
             EASQUES is a <strong>private consultancy firm</strong> providing professional assistance 
-            for GST registration, compliance, certifications, company incorporation, and training programs. 
-            We are not affiliated with the Government of India or any GST portal. All services are consultancy-based.
+            for Registration, compliance, certifications, company incorporation, and training programs. 
+            We are not affiliated with the Government of India or any Registration portal. All services are consultancy-based.
           </p>
         </div>
 

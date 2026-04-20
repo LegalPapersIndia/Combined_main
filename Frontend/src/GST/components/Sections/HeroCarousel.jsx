@@ -9,22 +9,22 @@ const slides = [
   {
     id: 1,
     imageUrl: banner1,
-    alt: "GST Registration Online India",
-    caption: "Apply for GST Registration Online",
+    alt: "Registration Online India",
+    caption: "Apply for Registration Online",
     subCaption: "Simple • Fast • Reliable",
   },
   {
     id: 2,
     imageUrl: banner2,
-    alt: "GST Number Apply in 3-7 Days",
-    caption: "Get Your GST Number in Simple Steps",
+    alt: "Registration Number Apply in 3-7 Days",
+    caption: "Get Your Registration Number in Simple Steps",
     subCaption: "3-7 Working Days Processing",
   },
   {
     id: 3,
     imageUrl: banner3,
-    alt: "GST Certificate India",
-    caption: "100% Online GST Registration",
+    alt: "Registration Certificate India",
+    caption: "100% Online Registration",
     subCaption: "Expert Assistance • PAN India Service",
   },
 ];
@@ -83,11 +83,11 @@ export default function HeroCarousel() {
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-r from-blue-700 via-indigo-700 to-blue-800 text-white py-3 overflow-hidden shadow-inner z-20">
         <div className="marquee whitespace-nowrap text-sm sm:text-base font-medium">
           <span className="inline-block px-12">
-            This is a private consultancy portal for GST Registration. 
+          ⚠️  This is a private consultancy portal for Registration. 
             Portal fees are consultancy charges only. • Government fees extra as applicable.
           </span>
           <span className="inline-block px-12">
-            This is a private consultancy portal for GST Registration. 
+            ⚠️  This is a private consultancy portal for Registration. 
             Portal fees are consultancy charges only. • Government fees extra as applicable.
           </span>
         </div>

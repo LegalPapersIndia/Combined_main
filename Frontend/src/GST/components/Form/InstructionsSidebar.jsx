@@ -20,7 +20,7 @@ export default function InstructionsSidebar() {
 
         <li>
           <strong>Email Id :</strong> Provide a valid and active email address of the applicant / 
-          authorized signatory. All GST communications, OTPs, and updates will be sent here.
+          authorized signatory. All communications, OTPs, and updates will be sent here.
         </li>
 
         <li>
@@ -44,23 +44,23 @@ export default function InstructionsSidebar() {
 
         <li>
           <strong>Address of Principal Place of Business :</strong> Fill in the complete and accurate address 
-          of your principal place of business. This address will appear on your GST Certificate.
+          of your principal place of business. This address will appear on your Certificate.
         </li>
 
         <li>
           <strong>State & District :</strong> Select your state and district carefully as it determines 
-          the jurisdictional GST office and proper officer.
+          the jurisdictional office and proper officer.
         </li>
       </ol>
 
       <div className="mt-8 pt-6 border-t border-gray-200 text-xs text-gray-600">
         <p className="italic">
-          Note: This is a private consultancy assisted form — not the official GST Portal (gst.gov.in). 
+          Note: This is a private consultancy assisted form — not the official Portal. 
           The fees charged on this portal are consultancy charges and not government fees.
         </p>
         <p className="mt-3 italic">
           Ensure all information entered matches exactly with your PAN, Aadhaar, Bank details, 
-          and other official documents to avoid rejection or delay in GST registration.
+          and other official documents to avoid rejection or delay in registration.
         </p>
       </div>
     </div>

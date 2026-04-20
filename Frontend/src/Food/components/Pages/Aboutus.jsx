@@ -12,7 +12,7 @@ export default function AboutUsPage() {
             About EASQUES
           </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            Your trusted private consultancy partner for FSSAI compliance, business certifications, 
+            Your trusted private consultancy partner for compliance, business certifications, 
             company incorporation, and professional training programs across India.
           </p>
         </div>
@@ -25,7 +25,7 @@ export default function AboutUsPage() {
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
               EASQUES is a dedicated private consultancy firm committed to simplifying regulatory compliance 
-              and helping businesses thrive. We specialize in <strong>FSSAI Food License Registration & Renewal</strong>, 
+              and helping businesses thrive. We specialize in <strong> Food Registration & Renewal</strong>, 
               various business certifications, company incorporation, and skill-building training programs 
               delivered through webinars and classroom sessions.
             </p>
@@ -50,7 +50,7 @@ export default function AboutUsPage() {
               <div className="flex items-center justify-center w-16 h-16 bg-green-100 text-green-600 rounded-full mb-6 mx-auto">
                 <FaUsers size={32} />
               </div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">FSSAI Compliance</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Certificate Compliance</h3>
               <p className="text-gray-600">
                 Basic Registration, State License, Central License, Renewal, Modification, 
                 and full food safety compliance support for restaurants, manufacturers, traders, and more.

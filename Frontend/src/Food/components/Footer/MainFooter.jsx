@@ -125,7 +125,7 @@ export default function MainFooter() {
               <div className="relative group">
                 <img
                   src={Logo}
-                  alt="FSSAI Registration Portal"
+                  alt="Food Registration Portal"
                   className="h-20 w-20 sm:h-26 sm:w-26 md:h-30 md:w-30 lg:h-36 lg:w-36 object-contain"
                 />
 

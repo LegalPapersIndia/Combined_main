@@ -13,7 +13,7 @@ export default function InstructionsSidebar() {
 
         <li>
           <strong>Name of Applicant/Company :</strong> Enter the full name of the individual / business / enterprise 
-          exactly as it should appear on the FSSAI Certificate / License.
+          exactly as it should appear on the Certificate.
         </li>
 
         <li>
@@ -33,7 +33,7 @@ export default function InstructionsSidebar() {
 
         <li>
           <strong>Name of the Food Category :</strong> Select the most appropriate food category(ies) 
-          under which your products/business falls (as per FSSAI classification).
+          under which your products/business falls (as per classification).
         </li>
 
         <li>
@@ -43,7 +43,7 @@ export default function InstructionsSidebar() {
 
         <li>
           <strong>Address of Business :</strong> Fill in the complete and accurate premises address where 
-          the food business activity is carried out — this address will be printed on the FSSAI Certificate.
+          the food business activity is carried out — this address will be printed on the Certificate.
         </li>
 
         <li>
@@ -54,7 +54,7 @@ export default function InstructionsSidebar() {
 
       <div className="mt-8 pt-6 border-t border-gray-200 text-xs text-gray-600">
         <p className="italic">
-          Note: This is a consultancy assisted form — not the official FSSAI FoSCoS portal. 
+          Note: This is a consultancy assisted form — not the official FSSAI portal. 
           Ensure all information matches your official documents exactly to avoid rejection or delay.
         </p>
         <p className="mt-2 italic">

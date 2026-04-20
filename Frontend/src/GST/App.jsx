@@ -61,11 +61,11 @@ function PrivateConsultancyMarquee() {
       <div className="marquee-container relative w-full">
         <div className="marquee inline-flex whitespace-nowrap text-sm font-medium tracking-wide animate-marquee">
           <span className="mx-16">
-            This is a private consultancy self-registration portal Owned By <b>EASQUES</b> for GST Registration. 
+          ⚠️  This is a private consultancy self-registration portal Owned By <b>EASQUES</b> for Registration. 
             Portal fees are consultancy in nature.
           </span>
           <span className="mx-16">
-            This is a private consultancy self-registration portal Owned By <b>EASQUES</b> for GST Registration. 
+          ⚠️  This is a private consultancy self-registration portal Owned By <b>EASQUES</b> for Registration. 
             Portal fees are consultancy in nature.
           </span>
         </div>
@@ -160,7 +160,7 @@ function AppContent() {
                 <div className="mx-auto max-w-screen-2xl mt-10">
                   <div className="grid lg:grid-cols-3 gap-6 lg:gap-10">
                     <div className="lg:col-span-2">
-                      <FssaiRegistrationForm />   {/* ← Is component ka naam GSTRegistrationForm kar sakte ho baad mein */}
+                      <FssaiRegistrationForm />  
                     </div>
                     <div className="lg:col-span-1">
                       <InstructionsSidebar />

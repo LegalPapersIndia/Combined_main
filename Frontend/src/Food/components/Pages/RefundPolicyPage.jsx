@@ -22,7 +22,7 @@ export default function RefundPolicyPage() {
 
           <p className="leading-relaxed mb-4">
             We offer a fair and transparent refund policy for our consultancy services related to 
-            <strong> FSSAI registration and food license services</strong>.
+            <strong> Registration and food license services</strong>.
             Refunds are processed only if we are unable to deliver the committed service due to our fault.
           </p>
 
@@ -49,7 +49,7 @@ export default function RefundPolicyPage() {
 
             <p className="text-gray-700 leading-relaxed">
               We follow a <strong>money-back guarantee policy</strong> if we are unable to process your 
-              FSSAI registration or licensing service as committed by us.
+             registration or licensing service as committed by us.
             </p>
           </section>
 
@@ -83,7 +83,7 @@ export default function RefundPolicyPage() {
                 <span>
                   <strong>No refund</strong> shall be issued if the application has been processed as per 
                   government guidelines but the license approval or certificate issuance is delayed by 
-                  FSSAI authorities.
+                 authorities.
                 </span>
               </li>
 
@@ -91,7 +91,7 @@ export default function RefundPolicyPage() {
                 <span className="text-green-600 text-xl font-bold mt-1">•</span>
                 <span>
                   Any <strong>government fee, challan, or statutory charges</strong> paid during the
-                  processing of FSSAI registration will be deducted from the refund amount.
+                  processing of registration will be deducted from the refund amount.
                 </span>
               </li>
 
@@ -133,7 +133,7 @@ export default function RefundPolicyPage() {
           <section className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 text-center border border-green-200">
             <p className="text-lg text-gray-800 font-medium">
               We value your trust and are committed to providing transparent and reliable 
-              consultancy services for FSSAI registration and food license compliance.
+              consultancy services for registration and food license compliance.
             </p>
           </section>
 

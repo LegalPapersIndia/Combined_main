@@ -12,7 +12,7 @@ export default function GSTDisclaimerPage() {
               Disclaimer Policy
             </h1>
             <p className="text-lg md:text-xl opacity-90">
-              Important Information Regarding Our GST Consultancy Services
+              Important Information Regarding Our Registration Consultancy Services
             </p>
           </div>
 
@@ -23,7 +23,7 @@ export default function GSTDisclaimerPage() {
             <p className="text-lg mb-6">
               <strong className="text-blue-600">
                 The fees charged on this website are purely consultancy fees
-                for professional assistance and guidance related to GST
+                for professional assistance and guidance related to
                 registration and compliance.
               </strong>
             </p>
@@ -40,7 +40,7 @@ export default function GSTDisclaimerPage() {
 
               <p>
                 This website is owned and operated by a private consultancy
-                firm providing professional services related to GST registration
+                firm providing professional services related to registration
                 and tax compliance. We do not represent or claim any official 
                 association with the Goods and Services Tax Network (GSTN), 
                 Central Board of Indirect Taxes and Customs (CBIC), or any 
@@ -51,7 +51,7 @@ export default function GSTDisclaimerPage() {
                 This is <strong>not an official Government website</strong>.
                 The forms available on this portal are designed only to collect
                 basic information from individuals or businesses interested in
-                GST registration services so that our consultants can provide
+                registration services so that our consultants can provide
                 appropriate guidance and assistance.
               </p>
 
@@ -61,12 +61,12 @@ export default function GSTDisclaimerPage() {
               </p>
 
               <ul className="list-disc pl-6 space-y-2">
-                <li>New GST Registration</li>
-                <li>GST Registration for Composition Scheme</li>
-                <li>Regular GST Registration</li>
-                <li>GST Modification / Amendment</li>
-                <li>GST Cancellation</li>
-                <li>GST Compliance &amp; Filing Guidance</li>
+                <li>New Registration</li>
+                <li>Registration for Composition Scheme</li>
+                <li>Regular Registration</li>
+                <li>Registration Modification / Amendment</li>
+                <li>Registration Cancellation</li>
+                <li>Registration Compliance &amp; Filing Guidance</li>
                 <li>Application filing and documentation support</li>
               </ul>
 
@@ -75,8 +75,7 @@ export default function GSTDisclaimerPage() {
                   All payments made through this portal are strictly for
                   consultancy and professional assistance services. These
                   charges do not include official Government fees, which may
-                  need to be paid separately on the official GST Portal 
-                  (gst.gov.in) if applicable.
+                  need to be paid separately on the official Registration Portal.
                 </p>
               </div>
 

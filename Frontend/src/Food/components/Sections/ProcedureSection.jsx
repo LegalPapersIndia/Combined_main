@@ -29,8 +29,8 @@ export default function ProcedureSection() {
   },
   {
     number: "4",
-    title: "Receive FSSAI License",
-    description: "Our experts process your application and deliver your FSSAI license certificate.",
+    title: "Receive Certificate",
+    description: "Our experts process your application and deliver your certificate.",
     imageSrc: certi,
     iconClass: "w-20 h-20 md:w-28 md:h-28",
   },
@@ -45,10 +45,10 @@ export default function ProcedureSection() {
         {/* Heading */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-            Easy 4-Step Process to Get Your FSSAI License
+            Easy 4-Step Process to Get Your Certificate
           </h2>
           <p className="mt-4 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium">
-            Apply for your FSSAI Food License online with a simple and hassle-free process.
+            Apply for your Food Registration online with a simple and hassle-free process.
           </p>
         </div>
 

@@ -10,7 +10,7 @@ export default function GSTBenefitsSection() {
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-14 md:mb-20 text-gray-800 underline decoration-4 decoration-blue-600 underline-offset-8">
-          Learn More About GST Registration in India
+          Learn More About Registration in India
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6 lg:gap-12">

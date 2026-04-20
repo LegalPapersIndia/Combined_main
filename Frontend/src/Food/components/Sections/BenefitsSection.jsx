@@ -10,8 +10,8 @@ export default function FSSAIBenefitsSection() {
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-14 md:mb-20 text-gray-800 underline decoration-4 decoration-green-500 underline-offset-8">
-          Learn More About FSSAI Food License & Registration
-        </h2>
+          Learn More About Food Registration Certification
+       </h2>
 
         <div className="grid md:grid-cols-2 gap-6 lg:gap-12">
 

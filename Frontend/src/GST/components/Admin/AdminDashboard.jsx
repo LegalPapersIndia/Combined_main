@@ -73,7 +73,6 @@ export default function AdminDashboard() {
     fetchLeads();
   };
 
-  // Safe field extractor for GST
   const getField = (lead, shortName, longName) => {
     return (
       lead[shortName] ||
@@ -103,7 +102,6 @@ export default function AdminDashboard() {
     });
   }, [leads, searchTerm, filterStatus]);
 
-  // Export to Excel - GST Version
   const exportToExcel = () => {
     if (filteredLeads.length === 0) {
       alert("No leads to export!");
@@ -144,7 +142,7 @@ export default function AdminDashboard() {
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
           <div className="animate-spin h-12 w-12 border-4 border-blue-600 border-t-transparent rounded-full mx-auto mb-4"></div>
-          <p className="text-xl text-gray-600">Loading GST leads...</p>
+          <p className="text-xl text-gray-600">Loading All leads...</p>
         </div>
       </div>
     );
@@ -157,7 +155,7 @@ export default function AdminDashboard() {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
           <div>
-            <h1 className="text-4xl font-bold text-blue-700">GST Leads Dashboard</h1>
+            <h1 className="text-4xl font-bold text-blue-700">Leads Dashboard</h1>
             <p className="text-gray-600 mt-1">
               Total Leads: <span className="font-semibold">{leads.length}</span>
             </p>

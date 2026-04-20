@@ -10,15 +10,15 @@ export default function GSTFAQSection() {
         
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-10">
-          GST Registration – Frequently Asked Questions
+          Registration – Frequently Asked Questions
         </h2>
 
         {/* Intro */}
         <div className="max-w-4xl mx-auto text-center text-gray-600 mb-16 leading-relaxed">
           <p>
-            Goods and Services Tax (GST) is one of the most important tax reforms in India. 
+            Goods and Services Tax  is one of the most important tax reforms in India. 
             It has simplified the indirect taxation system and brought transparency in business operations. 
-            Many businesses and individuals have common questions regarding GST registration, compliance, 
+            Many businesses and individuals have common questions regarding registration, compliance, 
             and filing procedures.
           </p>
         </div>
