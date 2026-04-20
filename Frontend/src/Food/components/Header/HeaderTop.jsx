@@ -84,10 +84,10 @@ export default function HeaderTop({ handleScroll }) {
 
             <div>
               <h1 className="text-xl xs:text-2xl sm:text-2.5xl md:text-3xl lg:text-4xl font-extrabold tracking-tight drop-shadow-lg leading-tight">
-                भारतीय खाद्य सुरक्षा लाइसेंस कंसल्टेंसी ऑनलाइन पोर्टल
+                INDIA'S FOOD SAFETY LICENSE CONSULTANCY ONLINE PORTAL
               </h1>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold mt-0.5 opacity-90">
-                INDIA'S FOOD SAFETY LICENSE CONSULTANCY ONLINE PORTAL
+                भारतीय खाद्य सुरक्षा लाइसेंस कंसल्टेंसी ऑनलाइन पोर्टल
               </p>
             </div>
           </div>
